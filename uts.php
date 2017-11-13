@@ -5,7 +5,7 @@ echo"<br> TUGAS UTS PHP <br>";
 echo"<hr>";
 
 $rumus = new rumus();
-$pilih = "pangkat";
+$pilih = "genap";
 
 switch ($pilih){
 	case "genap" :
@@ -17,6 +17,8 @@ switch ($pilih){
 	case "pangkat" :
 		echo $rumus -> pangkat(5,3);
 	break;	
+	default :
+		echo "404 Not Found.";
 }
 echo"<hr>";
 echo date("l, d F Y");
